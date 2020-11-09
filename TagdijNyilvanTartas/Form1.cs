@@ -10,11 +10,24 @@ using System.Windows.Forms;
 
 namespace TagdijNyilvanTartas
 {
+    
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void újTagToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.tagUj.Show();
+        }
+
+        private void módosításToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.tagModositas.Show();
         }
     }
 }
